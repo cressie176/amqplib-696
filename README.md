@@ -1,7 +1,6 @@
 A project for demonstrating how to use amqplib with TLS. See https://github.com/amqp-node/amqplib/issues/696
 
-## Generating new certificates / keys
-https://www.rabbitmq.com/ssl.html#manual-certificate-generation
+Follow [this guide](https://www.rabbitmq.com/ssl.html#manual-certificate-generation) to generate new certs/keys 
 
 ## Running
 
