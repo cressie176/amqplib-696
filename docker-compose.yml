@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  my-rabbit:
+    tty: true
+    image: rabbitmq:management-alpine
+    hostname: my-rabbit
+    ports:
+      - "5671:5671"
+      - "5672:5672"
+      - "15671:15671"      
+      - "15672:15672"
+    volumes:
+      - /Users/steve/Development/amqp-node/amqplib-696/certs:/cert_rabbitmq
+      - /Users/steve/Development/amqp-node/amqplib-696/conf:/etc/rabbitmq/conf.d/
