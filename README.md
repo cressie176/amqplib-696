@@ -1,4 +1,6 @@
-See https://github.com/amqp-node/amqplib/issues/696
+A project for demonstrating how to use amqplib with TLS. See https://github.com/amqp-node/amqplib/issues/696
+
+## Running
 
 ### Terminal 1
 ```
