@@ -11,4 +11,4 @@ services:
       - "15672:15672"
     volumes:
       - /Users/steve/Development/amqp-node/amqplib-696/certs:/cert_rabbitmq
-      - /Users/steve/Development/amqp-node/amqplib-696/conf:/etc/rabbitmq/conf.d/
+      - /Users/steve/Development/amqp-node/amqplib-696/etc/:/etc/rabbitmq/

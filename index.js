@@ -7,7 +7,8 @@ var opts = {
   key: fs.readFileSync(path.join(__dirname, 'certs', 'client', 'private_key.pem')),
   passphrase: 'MySecretPassword',
   ca: [fs.readFileSync(path.join(__dirname, 'certs', 'testca', 'ca_certificate.pem'))],
-  rejectUnauthorized: false
+  rejectUnauthorized: false,
+  credentials: amqplib.credentials.external()
 };
 
 (async () => {
