@@ -21,7 +21,7 @@ var opts = {
   	console.log({ error });
   })
 
-	await channel.assertQueue('q-696', { autoDelete: true })
+  await channel.assertQueue('q-696', { autoDelete: true })
 
   await channel.close();
 
