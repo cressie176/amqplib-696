@@ -8,11 +8,15 @@ var opts = {
   passphrase: 'MySecretPassword',
   ca: [fs.readFileSync(path.join(__dirname, 'certs', 'testca', 'ca_certificate.pem'))],
   rejectUnauthorized: false,
-  credentials: amqplib.credentials.external()
+  credentials: amqplib.credentials.external(),
+  servername: 'my-rabbit'
 };
 
 (async () => {
-  const connection = await amqplib.connect('amqps://localhost', opts);
+  const connection = await amqplib.connect({
+    protocol: 'amqps',
+    hostname: '127.0.0.1'
+  }, opts);
   connection.on('error', (error) => {
   	console.log({ error });
   })
