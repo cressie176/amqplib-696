@@ -8,7 +8,7 @@ A project for demonstrating how to use amqplib with TLS. See https://github.com/
 docker-compose up
 ```
 
-### Create a RabbitMQ user
+### Create a user
 
 Use the [management plugin](http://localhost:15672/#/users) to create a RabbitMQ user with the following details
 
