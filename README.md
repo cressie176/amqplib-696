@@ -2,12 +2,23 @@ A project for demonstrating how to use amqplib with TLS. See https://github.com/
 
 ## Running
 
-### Terminal 1
+### Start RabbitMQ
+
 ```
 docker-compose up
 ```
 
-### Terminal 2
+### Create a user for your local machine
+
+Use the [management plugin](http://localhost:15672/#/users) to create a RabbitMQ user with the following details
+
+- username `O=client,CN=${YOUR LOCAL MACHINE HOSTNAME}`
+- password `password`
+
+Grant the user access to the default vhost
+
+### Connect using amplib
+
 ```
 npm i
 node index
